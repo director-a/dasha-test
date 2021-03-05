@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>USTORE</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/sort.css">
+	<meta name="description" content="catalog page">
+	<link id="a-png" rel="shortcut icon" href="./assets/images/A.png" type="image/png">
+
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+
+<!--header-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="#">ADEco</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Location</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Dropdown
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <li><a class="dropdown-item" href="./catalog.html">Chairs</a></li>
+			  <li><a class="dropdown-item" href="#">Sofas</a></li>
+			  <li><hr class="dropdown-divider"></li>
+			  <li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+		  </li>
+		</ul>
+		<form class="d-flex">
+		  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	  </div>
+	</div>
+  </nav>
+<!--header-->
+
+<div class="sort-ss-shopcart">
+<!--sort-->
+<div class="sort-box">
+	<div class="sort-text">
+	Sort items by: 
+	</div>
+	<div class="sort-oportunities">
+		<div class="sort-price">Price:
+		<button class="higher-price" onclick="higherPrice()">Higher</button>
+		<button class="lower-price" onclick="lowerPrice()">Lower</button>
+		</div>
+		
+		<div id="sort-availability" class="sort-availability">Availability:
+		<button onclick="sortByAvailability()" class="availability-instock">In Stock</button>
+		<button class="availability-seeall" onclick="seeAll()">All items</button>
+		 </div>
+	</div>
+</div>
+<!--sort-->
+<!--shopingcart-->
+<div class="shoping-cart-box">
+
+<div class="shoping-cart-text">Items in the shoping cart: </div>
+<div class="shoping-cart" id="shoping-cart">0</div>
+<div id="out"></div>
+
+</div>
+<!--shopingcart-->
+</div>
+
+<!-- inputs-sorting-price -->
+<div id="sopingcart-input"></div>
+<div id="sopingcart-input-1"></div>
+
+<div id="sopingcart-input-2"></div>
+<div id="sopingcart-input-2-1"></div>
+
+<!-- inputs-sorting-price -->
+<!--cataloge-->
+<div class="cataloge-cards cataloge-cards-sorting cataloge-cards1">
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-1.jpg" alt="">
+	<span class="shoe-name">Крісло, ГУННАРЕД темно-сірий</span>
+	<span class="availability available">In stock</span>
+	<span class="shoe-price" id="shoe-price0">399$</span>
+	<button type="button" class="button-card" id="button-card" onclick="increase()" >Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-2.jpg" alt="">
+	<span class="shoe-name">Крісло, коричневий/КНІСА світло-бежевий</span>
+	<span class="availability  available">In stock</span>
+		<span class="shoe-price" id="shoe-price1">439$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-3.jpg" alt="">
+	<span class="shoe-name">ТУЛЛЬСТА <br> Крісло</span>
+	<span class="availability  available">In stock</span>
+		<span class="shoe-price" id="shoe-price2">419$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-4.jpg" alt="">
+	<span class="shoe-name">Крісло, ГУННАРЕД темно-сірий/під дерево </span>
+	<span class="availability  available">In stock</span>
+		<span class="shoe-price" id="shoe-price3">499$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+</div>
+
+<div class="cataloge-cards cataloge-cards-sorting">
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-5.jpg" alt="">
+	<span class="shoe-name">ВЕДБУ Крісло із високою спинкою</span>
+	<span class="availability available">In stock</span>
+	<span class="shoe-price">489$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-6.jpg" alt="">
+	<span class="shoe-name">Крісло, чорно-коричневий чорний</span>
+	<span class="availability available">In stock</span>
+	<span class="shoe-price">469$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-7.jpg" alt="">
+	<span class="shoe-name">Крісло-гойдалка,темно-синій</span>
+	<span class="availability available">In stock</span>
+	<span class="shoe-price">389$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-8.jpg" alt="">
+	<span class="shoe-name">Дитяче крісло, ВІССЛЕ сірий</span>
+	<span class="availability available">In stock</span>
+	<span class="shoe-price">449$</span>
+	<button class="button-card" id="button-card" onclick="increase()">Add to cart</button>
+</div>
+</div>
+
+<div class="cataloge-cards" id="unavailable">
+<div class="card" >
+	<img class="shoe-card" src="./assets/images/krislo-9.jpg" alt="">
+	<span class="shoe-name">Крісло з підголівником, темно-зелений</span>
+	<span class="availability  unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-10.jpg" alt="">
+	<span class="shoe-name">Крісло, дубовий шпон світло-бежевий</span>
+	<span class="availability  unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+
+<div class="card" >
+	<img class="shoe-card" src="./assets/images/krislo-11.jpg" alt="">
+	<span class="shoe-name">Крісло, ХОЛЬМБЮ натуральний</span>
+	<span class="availability  unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+
+<div class="card" >
+	<img class="shoe-card" src="./assets/images/krislo-12.jpg" alt="">
+	<span class="shoe-name">Крісло, ДЙУПАРП жовто-бежевий </span>
+	<span class="availability unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+</div>
+<!--cataloge-->
+
+<!--cataloge-pages-->
+<div id="unavailable1" class="cataloge-pages">
+    <span class="page-name">Page:</span>
+    <a class="page-number active-page-num" href="./catalog.html">1</a>
+    <a class="page-number " href="./catalog2.html">2</a>
+</div>
+<!--cataloge-pages-->
+
+<!--<footer>-->
+	<div class="footer">
+		<p style="text-align: center; margin-top: 20px;">Copyright © 2007 - 2021 Dasha Sorokina</p>
+	</div>
+<!--</footer>-->
+<!-- JavaScript Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>-->
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script src="./js/sort.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

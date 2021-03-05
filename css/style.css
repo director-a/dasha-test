@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width: 1000px){
+ 	.brands-fotos{
+	display: flex;
+	flex-direction:column;
+}
+.brand-foto{
+	width: 100%;
+	padding-left: 10%;	
+	padding-right: 10%;
+	padding-bottom: 10px;
+
+}
+.models-fotos{
+	display: flex;
+	flex-direction:column;
+}
+.model-foto{
+	width: 100%;
+	padding-left: 10%;	
+	padding-right: 10%;
+	padding-bottom: 10px;
+
+}
+	
+	/*banner*/
+.banners{
+	margin-top: 0px;
+}
+.banner{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.banner1{
+	width: 100%;
+	padding-bottom: 15px;
+}
+.banner0-0{
+		display: none;
+}
+.banner1-1{
+		display: none;
+}
+	/*cataloge*/
+	.cataloge-cards1{
+		margin-top: 30px;
+	}
+.cataloge-cards{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	align-items: center;
+	border: 0;
+	margin-bottom: 15px;
+	
+}
+.shoe-card{
+	width: 100%;
+}
+.shoe-name{
+	margin-top: 5px;
+	font-size: 37px;
+}
+.button-card{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 35%;
+	border: 0;
+	background-image: linear-gradient(150deg, black, grey);
+	transition: 1s; 
+	color: white;
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 22px;
+}
+/*social*/
+}
+
+@media(min-width: 1001px){
+	.brands-fotos{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.brand-foto{
+	width: 100%;
+}
+	.models-fotos{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.model-foto{
+	width: 100%;
+	height: 326px;
+}
+	.banners1{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+}
+	
+	/*banner*/
+.banner1{
+	width: 50%;
+}
+	.banners{
+		display: none;
+	}
+	
+	
+	/*cataloger*/
+.cataloge-cards{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	align-items: center;
+	border: 0;
+	
+}
+.shoe-card{
+	width: 80%;
+	margin-top: 20px;
+}
+.shoe-name{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 24px;
+}
+.button-card{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 50%;
+	border: 0;
+	background-image: linear-gradient(150deg, black, grey);
+	transition: 1s; 
+	color: white;
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 18px;
+}
+}
+
+/*navbar*/
+/*social*/
+/*carousel slideshow*/
+.carousel, .slide{
+    z-index: 0;
+}
+
+/*buton*/
+.buynow{
+	background-color: darkgray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.buy-text{
+	font-size: 20px;
+	padding-bottom: 10px;
+	margin-left: 40px;
+	font-weight: 500;
+}
+.buy-buton{
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	margin-left: 40px;
+	border-radius: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/*brands*/
+.brands-text, .models-text{
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-size: 50px;
+	font-weight: 500;
+	text-align: center;
+}
+
+/*banners*/
+
+/*models*/
+
+/*footer*/
+.social{
+	display: flex;
+	flex-direction: row;
+    width: 90%;
+    height: 60px;
+    background-color: #fff;
+    margin-top: 50px;
+    transition: .1s;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+.social{
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 110%;
+    width: 90%; 
+  }
+
+  to {
+    margin-left: 5%;
+    width: 90%;
+
+  }
+}
+.icon{
+        width: 30px;
+    height: 30px;
+}
+.social1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+	transition: 0.1s linear;
+}
+.inst, .github, .facebook{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.inst, .github, .facebook:hover{
+   color: black;
+}
+.social1{
+    color: black;
+    text-decoration: none;
+}
+.social1:hover{
+    font-weight: bolder;
+	color: black;
+}
+
+/*cataloge*/
+
+/*none*/
+.none{
+	display: none;
+}
+
+/*pages-cataloge*/
+.cataloge-pages{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.page-number, .page-name{
+    font-size: 27px;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+}
+.page-number:hover{
+   font-weight: bolder;
+    color: black;
+}
+.active-page-num{
+    text-decoration: underline;
+}
+#a-png{
+	border-radius: 50px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>USTORE</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/sort.css">
+	<meta name="description" content="cataloge page">
+	<link id="a-png" rel="shortcut icon" href="./assets/images/A.png" type="image/png">
+
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+
+<!--header-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="#">ADEco</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Location</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Dropdown
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <li><a class="dropdown-item" href="./catalog.html">Chairs</a></li>
+			  <li><a class="dropdown-item" href="#">Sofas</a></li>
+			  <li><hr class="dropdown-divider"></li>
+			  <li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+		  </li>
+		</ul>
+		<form class="d-flex">
+		  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	  </div>
+	</div>
+  </nav>
+
+<!--header-->
+
+<div class="sort-ss-shopcart">
+<!--sort-->
+<div class="sort-box">
+	<div class="sort-text">
+	Sort items by: 
+	</div>
+	<div class="sort-oportunities">
+		<div class="sort-price">Price:
+		<button class="higher-price">Higher</button>
+		<button class="higher-price">Lower</button>
+		</div>
+		
+		<div id="sort-availability" class="sort-availability">Availability:
+		<button onclick="sortByAvailability()" class="availability-instock">In Stock</button>
+		<button class="availability-seeall" onclick="seeAll()">All items</button>
+		 </div>
+	</div>
+</div>
+<!--sort-->
+<!--shopingcart-->
+<div class="shoping-cart-box">
+
+<div class="shoping-cart-text">Items in the shoping cart: </div>
+<div class="shoping-cart" id="shoping-cart">0</div>
+<div id="out"></div>
+
+</div>
+<!--shopingcart-->
+</div>
+
+<!--cataloge-->
+
+<div class="cataloge-cards" id="unavailable">
+<div class="card" >
+	<img class="shoe-card" src="./assets/images/krislo-13.jpg" alt="">
+	<span class="shoe-name">Крісло, РЕММАРН світло-сірийn</span>
+	<span class="availability  unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+
+<div class="card">
+	<img class="shoe-card" src="./assets/images/krislo-14.jpg" alt="">
+	<span class="shoe-name">Крісло-ліжко, ВАЛЛАРУМ бірюзовий</span>
+	<span class="availability  unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+
+<div class="card" >
+	<img class="shoe-card" src="./assets/images/krislo-15.jpg" alt="">
+	<span class="shoe-name">Секція дивана зі спинкою, темно-сірий</span>
+	<span class="availability  unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+
+<div class="card" >
+	<img class="shoe-card" src="./assets/images/krislo-16.jpg" alt="">
+	<span class="shoe-name">Крісло, кімнатне/вуличне, бежевий</span>
+	<span class="availability unavailable">Out of stock</span>
+	<button class="button-card" id="button-card" onclick="cannotAdd()">Add to cart</button>
+</div>
+</div>
+<!--cataloge-->
+
+<!--cataloge-pages-->
+<div class="cataloge-pages">
+    <span class="page-name">Page:</span>
+    <a class="page-number active-page-num" href="./catalog2.html">2</a>
+    <a class="page-number " href="./catalog.html">1</a>
+</div>
+<!--cataloge-pages-->
+
+<!--<footer>-->
+<div class="footer">
+	<p style="text-align: center; margin-top: 20px;">Copyright © 2007 - 2021 Dasha Sorokina</p>
+</div>
+<!--</footer>-->
+<!-- JavaScript Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>-->
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
